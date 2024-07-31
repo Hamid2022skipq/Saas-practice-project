@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head_title %}
+Home | {{block.super}}
+{% endblock head_title %}
+{% block content %}
+<p>
+    Asslam-o-Alikum Again from index.html
+</p>
+{% endblock content %}
+{% block content_Again %}
+
+<p>
+    there is something i like to share with you.
+</p>
+{% include "snippet/welcome_user_message.html" %}
+
+<p>Page Total Visitors: {{page_visitors}}</p>
+<p>Total Visitors: {{ total_visitors }}</p>
+{% endblock content_Again %}
